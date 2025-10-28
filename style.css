@@ -1,0 +1,824 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 120%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+/* scrollbar */
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #89e036;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #89e036;
+}
+
+/* navbar styling */
+nav{
+    width: 100%;
+    height: 10vh;
+}
+
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s linear;
+}
+
+.logo span{
+    color: #89e036;
+    text-shadow: 0 0 10px #89e036;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+
+}
+
+.hamburg, .cancel{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    opacity: 0;
+    pointer-events: none;
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+
+.nav-container .links{
+    display: flex;
+}
+
+.nav-container .links a{
+    margin: 0 20px;
+    font-size: 1.2rem;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    font-weight: 550;
+    transition: 0.3s linear;
+}
+
+.nav-container .links a::before{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #89e036;
+    transition: 0.2s linear;
+}
+
+.nav-container .links a:hover::before{
+    width: 100%;
+}
+
+.nav-container .links a:hover{
+    color: #89e036;
+}
+
+.dropdown{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(4px) brightness(40%);
+    box-shadow: 0 0 20px black;
+    transition: 0.2s linear;
+}
+
+.dropdown .links a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    padding: 15px 0;
+    align-items: center;
+    transition: 0.2s linear;
+}
+
+.dropdown .links a:hover{
+    background-color: #89e036;
+}
+
+section{
+    width: 100%;
+    min-height: 90vh;
+}
+
+section .main-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 200px;
+    margin-top: 120px;
+}
+
+.main-container .image{
+    width: 500px;
+    height: 54vh;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 50px #89e036;
+}
+
+.main-container .image img{
+    width: 103.5%;
+}
+
+.main-container .image img:hover{
+    animation: animate 1.5s ease-in-out infinite;
+}
+
+.main-container .content .content{
+    width: 100%;
+    margin: 0;
+}
+
+@keyframes animate {
+    0%{
+        scale: 1;
+    }
+    
+    50%{
+        scale: 1.1;
+    }
+    
+    100%{
+        scale: 1;
+    }
+}
+
+.main-container .content{
+    color: white;
+    width: 40%;
+}
+
+.content h1{
+    font-size: clamp(1rem, 1rem + 3vw, 2.5rem);
+}
+.content h1 span{
+    color: #89e036;
+    text-shadow: 0 0 10px #89e036;
+}
+
+.content .typeWriter{
+    font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
+    font-weight: 600;
+}
+
+.content .typeWriter-text{
+    color: #89e036;
+    text-shadow: 0 0 10px #89e036;
+}
+
+.content p{
+    margin: 10px 0;
+    font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
+}
+
+.social-links i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 0.2rem solid #89e036;
+    border-radius: 50%;
+    color: #89e036;
+    margin: 5px 15px;
+    font-size: 1.5rem;
+    transition: 0.2s linear;
+    margin-top: 10px;
+}
+
+.social-links i:hover{
+    scale: 1.3;
+    background-color: #89e036;
+    color: black;
+    filter: drop-shadow(0 0 10px #89e036);
+}
+
+.content .button{
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #89e036;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.content .button:hover{
+    transform: scale(1.1);
+    background-color: transparent;  
+    color: #89e036;
+    border: 2px solid #89e036;
+    box-shadow: 0 0 40px #89e036;
+}
+
+
+section .content{
+    width: 80%;
+    margin: 0px auto;
+    font-family: 'poppins', sans-serif;
+}
+
+.about .about-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+section .title span{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+section .title span::before, section .title span::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #89e036;
+}
+
+section .title span::after{
+    bottom: -7px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about .about-details .left{
+    width: 45%;
+}
+
+.about.left img{
+    height: 400px;
+    width: 400px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.about .about-details .right{
+    width: 55%;
+}
+
+section .topic{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.about-details .right p{
+    text-align: justify;
+    color: white;
+}
+
+.about .about-details .right .content {
+    width: 100%;
+    margin: 0;
+}
+
+section .button{
+    margin: 16px 0;
+}
+
+section .button button{
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background: #89e036;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
+}
+
+section .button button:hover{
+    background-color: white;
+    border-color: #89e036;
+    color: #89e036;
+}
+
+.education .boxes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.education .boxes .box{
+    margin: 20px 0;
+    width: calc(100%/2 - 20px);
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+    cursor: default;
+    color: white;
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
+}
+
+.education .boxes .box:hover{
+    border-color: #89e036;
+}
+
+.education .boxes .box .icon{
+    height: 52.5px;
+    width: 55px;
+    background: #89e036;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: white;
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease;
+}
+
+.boxes .box:hover .icon{
+    background-color: white;
+    color: #89e036;
+}
+
+.education .boxes .box:hover.topic,
+.education .boxes .box:hover.year,
+.education.boxes.box:hover p{
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.education.boxes.box:hover.topic,
+.education.boxes.box:hover p,
+.education.boxes.box:hover.year{
+    color: white;
+}
+
+.experiences .boxes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.experiences .boxes .box{
+    margin: 20px 0;
+    width: calc(100%/3 - 20px);
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+    cursor: default;
+    color: white;
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
+}
+
+.experiences .boxes .box:hover{
+    border-color: #89e036;
+    color: white;
+    box-shadow: 0 0 40px #89e036;
+}
+
+.experiences .boxes .box .icon{
+    height: 52.5px;
+    width: 55px;
+    background: #89e036;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: white;
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease;
+}
+
+.boxes .box:hover .icon{
+    background-color: white;
+    color: #89e036;
+}
+
+.experiences .boxes .box:hover.topic,
+.experiences.boxes.box:hover.year,
+.experiences.boxes.box:hover p{
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.experiences.boxes.box:hover.topic,
+.experiences.boxes.box:hover.year,
+.experiences.boxes.box:hover p{
+    color: white;
+}
+
+.skills {
+    background: black;
+    padding: 50px 5%; 
+}
+
+.skills .content {
+    padding: 40px 0;
+}
+
+.skills .skill-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.skill-details .text {
+    width: 80%;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.skill-details p {
+    color: white;
+    text-align: justify;
+    margin-bottom: 0;
+    line-height: 1.8; 
+}
+
+.skills .skill-details .experience {
+    display: flex;
+    align-items: center;
+    margin: 25px 0 0 0;
+    gap: 10px; 
+}
+
+.skill-details .experience .num {
+    color: white;
+    font-size: 80px;
+}
+
+.skill-details .experience .exp {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.skill-details .boxes {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px; 
+}
+
+.skill-details .box {
+    width: calc(50% - 10px);
+}
+
+.skill-details .box .topic {
+    font-size: 20px;
+    font-weight: 400;
+    color: #89e036;
+}
+
+.skill-details .box .per {
+    font-size: 60px;
+    font-weight: 600;
+    color: #89e036;
+    line-height: 1.2;
+}
+
+
+.projects .boxes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.projects .boxes .box{
+    margin: 20px 0;
+    width: calc(100%/3 - 20px);
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+    cursor: default;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.projects .boxes .box:hover{
+    background: #89e036;
+    color: white;
+}
+
+.projects .boxes .box .icon{
+    height: 52.5px;
+    width: 55px;
+    background: #89e036;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: white;
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease;
+}
+
+.boxes .box:hover .icon{
+    background-color: white;
+    color: #89e036;
+}
+
+.projects .boxes .box:hover.topic,
+.projects.boxes.box:hover p{
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.projects.boxes.box:hover.topic,
+.projects.boxes.box:hover p{
+    color: white;
+}
+
+.contact{
+    background: black;
+    margin-top: 300px;
+}
+
+.contact.content{
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.contact .text{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+footer{
+    background: #89e036;
+    padding: 15px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .text span{
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+}
+
+footer .text span a{
+    font-weight: 500;
+    color: black;
+}
+
+footer .text span a:hover{
+    text-decoration: underline;
+}
+
+.scroll-button a{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    background: #89e036;
+    padding: 7px 12px;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: rgba(0,0,0,0.15);
+    display: none;
+}
+
+@media (max-width: 1000px) {
+  .about .about-details {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about .about-details .left {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .about .about-details .right {
+    width: 90%;
+    margin: 40px 0;
+  }
+
+  .services .boxes .box {
+    margin: 20px 0;
+    width: calc(100% / 2 - 20px);
+  }
+  .main-container .image { 
+    z-index: -1;
+    width: 50%;
+    height: 50vw;
+}
+}
+
+@media (max-width: 900px) {
+  .about .left img{
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 968px) {
+  
+  nav .logo { 
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    font-size: 1.5rem;
+    max-width: calc(100% - 70px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  section .main-container {
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-container .links {
+    display: none;
+  }
+
+  .hamburg,
+  .cancel {
+    opacity: 1;
+    pointer-events: visible;
+  }
+
+  .main-container .content {
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  .social-links {
+    display: inline;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .about {
+    margin-top: 150px;
+  }
+
+  .main-container.image {
+    z-index: -1;
+    width: 50%;
+    height: 60%;
+  }
+
+  .education {
+    margin-top: 150px;
+  }
+
+  .education .boxes .box{
+    width: calc(100%/1 - 20px);
+  }
+
+  .experiences {
+    margin-top: 150px;
+  }
+
+  .experiences .boxes .box{
+    width: calc(100%/1 - 20px);
+  }
+
+  .skills {
+    margin-top: 150px;
+  }
+
+  .skills .skill-details {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .skill-details .text { 
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .skill-details .boxes {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .projects {
+    margin-top: 150px;
+  }
+
+  .projects .boxes .box {
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .contact .text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-container .image{
+    width: 50%;
+    height: 60%;
+    margin-bottom: 0px;
+  }
+
+  .main-container.content{
+    width: 80%;
+  }
+
+  .main-container .button{
+    margin-top: 15px;
+  }
+}
+
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid #89e036;
+    }
+}
+
+@keyframes words{
+    0%, 20%{
+        content: "Medical";
+    }
+    41%, 60%{
+        content: "Technology";
+    }
+    81%, 100%{
+        content: "Student";
+    }
+}

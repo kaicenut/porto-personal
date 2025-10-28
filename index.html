@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Portofolio Intan Aprilia</title>
+
+
+</head>
+<body>
+    <!--navigation menu-->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                <span>Intan Aprilia Nur Haliza</span>
+            </div>
+            <div class="links">
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#about">About</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#education">Education</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#experiences">Experiences</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#skills">Skills</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#projects">Projects</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#contact">Contact</a></div>
+                </div>
+                <svg class="hamburg" onclick="hamburg()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                </svg>
+            <div class="dropdown">
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#education">Education</a>
+                    <a href="#experiences">Experiences</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                    <svg class="cancel" onclick="cancel()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3l105.4 105.3c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256l105.3-105.4z"/>
+                </svg>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--main section-->
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="main.jpg" alt="" >
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
+                    Hey, I'm 
+                    <span>Intan Aprilia Nur Haliza</span>
+                </h1>
+                <div class="typeWriter" data-aos="fade-right" data-aos-delay="900" data-aos-duration="1500">I'm a <span class="typeWriter-text"></span></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">    
+                    Second-year Medical Technology student at Institut Teknologi Sepuluh Nopember (ITS) with strong interest in technology and innovation.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/intanaprilianh/">
+                        <i class="fa-brands fa-linkedin" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/kaicenut">
+                        <i class="fa-brands fa-github" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/tanaprl_/">
+                        <i class="fa-brands fa-instagram" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="content" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1800">
+                    <a href="https://drive.google.com/drive/folders/1kBDjt6T4pceksN1wAi9d9qvISPCWPGGN?usp=drive_link" class="button">Drive Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--about me section-->
+    <section class="about" id="about">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1500"><span>About Me</span></div>
+            <div class="about-details">
+                <div class="left" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                    <img src="main.jpg" alt="" width="500">
+                    </div>
+                <div class="right">
+                    <div class="topic" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">Learning Something New is My Passion</div>
+                    <p  data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
+                        A Second-year Medical Technology student at ITS with strong interest in technology and innovation. Experienced in PCB design, programming, and 3D modeling through projects like Pakanin, CapVoyager, and GlucoSee. Skilled in embedded systems and prototype design, with active involvement in organizations to enhance technical and interpersonal skills.
+                    </p>
+                    <div class="content" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
+                        <a href="https://drive.google.com/drive/folders/1kBDjt6T4pceksN1wAi9d9qvISPCWPGGN?usp=drive_link" class="button">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--education section-->
+    <section class="education" id="education">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1200">
+                <span>My Education</span>
+            </div>
+                <div class="education-details">
+                    <div class="boxes">
+                        <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                            <div class="icon">
+                                <i class="fa fa-graduation-cap"></i>
+                            </div>
+                            <div class="year">2021 - 2024</div>
+                            <div class="topic">High School</div>
+                            <p>
+                                Graduated from SMA Negeri 4 Jember with a focus on science subjects, laying a strong foundation for my future studies in Medical Technology.
+                            </p>
+                        </div>
+                        <div class="box"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                            <div class="icon">
+                                <i class="fa fa-hourglass-half"></i>
+                            </div>
+                            <div class="year">2024 - Present</div>
+                            <div class="topic">Bachelor's Degree in Medical Technology</div>
+                            <p>
+                                Currently pursuing a Bachelor's degree in Medical Technology at Institut Teknologi Sepuluh Nopember (ITS), where I am expanding my knowledge and skills in medical devices and technology.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+
+    <!--experiences section-->
+    <section class="experiences" id="experiences">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1200">
+                <span>My Experiences</span>
+            </div>
+            <div class="experiences-details">
+                <div class="boxes">
+                    <div class="box"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                        <div class="icon">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <div class="year">Apr 2025 - Present</div>
+                        <div class="topic">Intern Staff Dalam Negeri - Himpunan Mahasiswa Teknologi Kedokteran (HMTK) ITS</div>
+                        <p>
+                            Organized and supported initiatives to strengthen unity and collaboration within the Medical Technology student community, including “HMTK Bangga,” a program recognizing and celebrating students' academic and non-academic achievements.
+                        </p>
+                    </div>
+                    <div class="box "data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                        <div class="icon">
+                            <i class="fa fa-folder"></i>
+                        </div>
+                        <div class="year">Nov 2024 - Jan 2025</div>
+                        <div class="topic">Data Management Staff - Ini Lho ITS Forda Jember</div>
+                        <p>
+                            Created and managed Google Forms for registration and feedback, while maintaining participant databases to ensure data accuracy and completeness.
+                    </div>
+                    <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                        <div class="icon">
+                            <i class="fa fa-wrench"></i>
+                        </div>
+                        <div class="year">Oct 2024 - Nov 2024</div>
+                        <div class="topic">Mechanical Intern - ITS Robocon</div>
+                        <p>
+                            Gained hands-on experience in mechanical design and robot manufacturing, assisting in prototype development aligned with the ABU Robocon 2025 theme, while learning material selection, component assembly, and system integration within a multidisciplinary team.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--skills section-->
+    <section class="skills" id="skills">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1200">
+                <span>My Skills</span>
+            </div>
+            <div class="skill-details">
+                <div class="text">
+                    <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+                        My Technical Level
+                    </div>
+                    <p data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">
+                        Here are some of my technical skills that I have acquired through various projects and experiences. I am always eager to learn and improve my skills to stay updated with the latest technologies.
+                    </p>
+                    <div class="experience" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                        <div class="num">2</div>
+                        <div class="exp">Years Of <br/> experience</div>
+                    </div>
+                    </div>
+                    <div class="boxes">
+                    <div class="box">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150" >Autodesk Infentor & Fusion</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">60%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="150">Python</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">50%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">C/C++</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">40%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="150">Proteus/KiCad</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">45%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--projects section-->
+    <section class="projects" id="projects">
+    <div class="content">
+        <div class="title" data-aos="fade-up" data-aos-duration="1200">
+        <span>My Projects</span>
+        </div>
+
+        <div class="projects-details">
+        <div class="boxes">
+            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+            <div class="icon">
+                <i class="fa fa-bolt"></i>
+                <i class="fa fa-desktop"></i>
+            </div>
+            <div class="year">Okt 2025</div>
+            <a href="https://drive.google.com/drive/folders/1yOSPBlRmpgrzBdOQRSNxElB26hAB574Q?usp=drive_link" class="topic">Pakanin - IoT-Based Automatic Fish Feeder</a>
+            <p>
+                Developed an automatic fish feeder equipped with ultrasonic sensor detection and web integration for real-time monitoring and feeding control, including PCB design, electrical system setup, and 3D modeling.
+            </p>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+            <div class="icon">
+                <i class="fa fa-cog"></i>
+            </div>
+            <div class="year">Sep 2025</div>
+            <a href="https://drive.google.com/drive/folders/1EbRs_6m57LGzNdp83IIbba6xXHcDOC8m?usp=drive_link" class="topic">CapVoyager - Capsule Endoscopy Prototype</a>
+            <p>
+                Designed a capsule endoscopy device prototype with VR-based real-time navigation and visualization, integrating mechanical and electrical components for immersive gastrointestinal imaging.
+            </p>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+            <div class="icon">
+                <i class="fa fa-bolt"></i>
+                <i class="fa fa-cog"></i>
+            </div>
+            <div class="year">Mei 2025</div>
+            <a href="https://drive.google.com/drive/folders/10DJzaHDQeBp-jbDyqeQbkd38M-mI7cNv?usp=drive_link" class="topic">Automatic Hand Sanitizer System</a>
+            <p>
+                Built an infrared sensor-based dispenser integrated with a mini pump for automatic hygiene application, focusing on compact system design and responsive motion detection.
+            </p>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+            <div class="icon">
+                <i class="fa fa-cog"></i>
+            </div>
+            <div class="year">Jan 2025 - Feb 2025</div>
+            <a href="https://drive.google.com/drive/folders/14ygppO8LeOJHcofPO20ajaivy9sclK0Q?usp=drive_link" class="topic">GlucoSEE - Wearable Non-Invasive Glucose Monitor</a>
+            <p>
+                Designed a prototype wearable glucose detection prototype using laser induction and non-enzymatic graphene sensors to measure glucose concentration through sweat, enabling non-invasive glucose monitoring.
+            </p>
+            </div>
+
+            <div class="box"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
+            <div class="icon">
+                <i class="fa fa-cog"></i>
+            </div>
+            <div class="year">Oct 2024 - Nov 2024</div>
+            <a href="https://drive.google.com/drive/folders/14_XhFfZ7c_bf7QV9MVEDuzu_-RIXOAz3?usp=sharing" class="topic">Robotic Leg Prototype - ABU Robocon 2025</a>
+            <p>
+                Contributed in 3D mechanical prototype design of a robotic leg mechanism aligned with the ABU Robocon 2025 theme.
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!--contact me section-->
+    <section class="contact" id="contact">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1500">
+                <span>Contact Me</span>
+            </div>
+            <div class="text">
+                <div class="topic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Have Any Project that we could solve together?</div>
+                <div class="content" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
+                        <a href="https://www.linkedin.com/in/intanaprilianh/" class="button">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer section start-->
+    <footer>
+        <div class="text">
+            <span>Created By 
+                <a href="#">Intan Aprilia Nur Haliza</a> | &#169; 2025 All Rights Reserved 
+            </span>
+        </div>
+    </footer>
+
+
+    <!-- script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+
+</body>
+</html>
